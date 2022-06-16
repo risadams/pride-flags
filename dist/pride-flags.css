@@ -13,6 +13,10 @@
   width: 4em;
 }
 
+.flag.icon.small {
+  width: 2em;
+}
+
 .flag.pink-triangle {
   background: conic-gradient(from 331deg at 50% 100%, #f7a 58deg, #0000 0) 50% 50%/55% 73% no-repeat, black;
 }
