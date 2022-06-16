@@ -148,6 +148,14 @@
   font-weight: 100;
 }
 
+.flag.icon.polyamory::before {
+  font-size: 44px;
+}
+
+.flag.icon.small.polyamory::before {
+  font-size: 30px;
+}
+
 .flag.twink {
   position: relative;
   background: linear-gradient(-45deg, #0000 43%, #000 0 57%, #0000 0) 52.5% 39.25%/5% 5% no-repeat, linear-gradient(-45deg, #0000 43%, #000 0 57%, #0000 0) 58.5% 45.25%/5% 5% no-repeat, linear-gradient(#000 0 0) 52.75% 37.5%/3.5% 1.5% no-repeat, linear-gradient(#000 0 0) 58.75% 43.5%/3.5% 1.5% no-repeat, linear-gradient(#000 0 0) 54.1% 39%/1% 5% no-repeat, linear-gradient(#000 0 0) 59.75% 45.1%/1% 5% no-repeat, radial-gradient(circle at 47% 47%, #0000 7%, #000 0 8.5%, #0000 0), radial-gradient(circle at 53% 53%, #0000 7%, #000 0 8.5%, #0000 0), linear-gradient(#faf 33.33%, white 0 66.66%, #ff6 0);

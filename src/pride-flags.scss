@@ -173,6 +173,16 @@
     font-weight: 100;
   }
 }
+.flag.icon.polyamory {
+  &::before {
+    font-size: 44px;
+  }
+}
+.flag.icon.small.polyamory {
+  &::before {
+    font-size: 30px;
+  }
+}
 .flag.twink {
   position: relative;
   background: linear-gradient(-45deg, #0000 43%, #000 0 57%, #0000 0) 52.5% 39.25% / 5% 5% no-repeat,

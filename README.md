@@ -1,5 +1,7 @@
 # CSS Pride Flags
 
+![npm](https://img.shields.io/npm/v/@risadams/pride-flags)
+
 ## Install
 
 This is a pure CSS library that can be included in your project to display LGBT+ pride flags as either large images, or small icons. It should be straightforward to install and use, and will be updated with new options and flags as they become available.
