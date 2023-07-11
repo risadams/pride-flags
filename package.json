@@ -27,6 +27,6 @@
   "homepage": "https://github.com/risadams/pride-flags#readme",
   "devDependencies": {
     "clean-css-cli": "^5.6.0",
-    "node-sass": "^8.0.0"
+    "node-sass": "^9.0.0"
   }
 }
