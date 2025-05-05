@@ -409,3 +409,137 @@
     radial-gradient(100% 140% at -15% 77%, #fff 54%, #0000 0) 42.25% 58.5% / 10% 24% no-repeat,
     radial-gradient(220% 145% at -35% 73%, var(--c) 50%, #0000 0) 42.5% 58.5% / 10% 24% no-repeat, #fff;
 }
+.flag.demigender {
+  background: linear-gradient(
+    #808080 0 14.28%,
+    white 0 28.57%,
+    #fbff74 0 42.85%,
+    white 0 57.14%,
+    #fbff74 0 71.42%,
+    white 0 85.71%,
+    #808080 0
+  );
+}
+
+.flag.demiboy {
+  background: linear-gradient(
+    #7f7f7f 0 14.28%,
+    #c4c4c4 0 28.57%,
+    white 0 42.85%,
+    #9ad9ea 0 57.14%,
+    white 0 71.42%,
+    #c4c4c4 0 85.71%,
+    #7f7f7f 0
+  );
+}
+
+.flag.demigirl {
+  background: linear-gradient(
+    #7f7f7f 0 14.28%,
+    #c4c4c4 0 28.57%,
+    white 0 42.85%,
+    #ffaec9 0 57.14%,
+    white 0 71.42%,
+    #c4c4c4 0 85.71%,
+    #7f7f7f 0
+  );
+}
+
+.flag.omnisexual {
+  background: linear-gradient(
+    #fe9ace 0 20%,
+    #ff53bf 0 40%,
+    #301934 0 60%,
+    #304cbd 0 80%,
+    #82afff 0
+  );
+}
+
+.flag.neutrois {
+  background: linear-gradient(white 33.33%, #2f9e41 0 66.66%, black 0);
+}
+
+.flag.genderflux {
+  background: linear-gradient(
+    #f57694 0 16.67%,
+    #f9a3b6 0 33.33%,
+    #c6e2f1 0 50%,
+    white 0 66.67%,
+    #9c9c9c 0 83.33%,
+    #000 0
+  );
+}
+
+.flag.unlabeled {
+  background: linear-gradient(
+    #51a85c 0 20%,
+    white 0 40%,
+    #9455b3 0 60%,
+    white 0 80%,
+    #000 0
+  );
+}
+
+.flag.queer {
+  background: linear-gradient(45deg,
+    #b57edc 0 12.5%,
+    #4a8123 0 37.5%,
+    #b41e8e 0 62.5%,
+    #e5c32e 0 87.5%,
+    #1a3263 0
+  );
+}
+
+.flag.sapphic {
+  background: linear-gradient(
+    #FD8BA8 25%,
+    #FBF2FF 0 50%,
+    #C76BC5 0 75%,
+    #FDD768 0
+  );
+}
+
+.flag.gay-men {
+  background: linear-gradient(
+    #078d70 0 14.28%,
+    #27ceaa 0 28.57%,
+    #98e8c1 0 42.85%,
+    white 0 57.14%,
+    #7bade2 0 71.42%,
+    #5049cc 0 85.71%,
+    #3d1a78 0
+  );
+}
+
+.flag.pangender {
+  background: linear-gradient(
+    #fff27f 0 12.5%,
+    #ffb3fb 0 25%,
+    #b5f7ff 0 37.5%,
+    white 0 50%,
+    #b5f7ff 0 62.5%,
+    #ffb3fb 0 75%,
+    #fff27f 0 87.5%,
+    #ffb3fb 0
+  );
+}
+
+.flag.aromantic-spectrum {
+  background: linear-gradient(
+    #3da542 0 20%,
+    #a7d379 0 40%,
+    #f5f5f5 0 60%,
+    #a9a9a9 0 80%,
+    #000000 0
+  );
+}
+
+.flag.asexual-spectrum {
+  background: linear-gradient(
+    #810081 0 20%,
+    #a3a3a3 0 40%,
+    #ffffff 0 60%,
+    #a3a3a3 0 80%,
+    #810081 0
+  );
+}

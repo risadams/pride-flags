@@ -23,36 +23,122 @@ a {
 }
 
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   overflow-x: hidden;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 20px;
 }
 
-h1,
-h2 {
-  font-weight: 400;
+h1, h2 {
+  font-weight: 600;
 }
 
-p,
-div {
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+  margin: 20px 0 30px;
+  width: 100%;
+  color: #1a1a1a;
+}
+
+/* Category headers */
+h2.category-header {
+  font-size: 1.8em;
+  width: 100%;
+  padding: 15px 20px;
+  margin: 40px 0 20px;
+  background: linear-gradient(90deg, #6d6875 0%, #b5838d 100%);
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Flag section headers */
+section h2 {
+  font-size: 1.2em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+p, div {
   font-weight: 300;
 }
 
 article {
   display: flex;
   flex-wrap: wrap;
-}
-
-h1 {
-  font-size: 2em;
-  min-width: 99%;
-  margin: 2vmin;
+  justify-content: center;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 section {
-  margin: 2vmin;
+  margin: 15px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .flag {
-  box-shadow: 0 0 0 0.5px;
-  abox-shadow: 5px 5px 10px #ccc;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+  width: 270px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+hr {
+  margin: 50px 0;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+  width: 100%;
+}
+
+/* Icon section styling */
+.icon-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.icon-category {
+  width: 100%;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.icon-category h3 {
+  font-size: 1.3em;
+  color: #444;
+  margin: 10px 0;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #ddd;
+}
+
+.flag.icon {
+  margin: 8px;
+  transition: transform 0.2s;
+}
+
+.flag.icon:hover {
+  transform: scale(1.2);
 }

@@ -1,6 +1,6 @@
 {
   "name": "@risadams/pride-flags",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Pure CSS Pride Flags",
   "files": [
     "dist/*.css"

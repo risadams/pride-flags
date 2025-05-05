@@ -25,45 +25,80 @@ npm install @risadams/pride-flags
 
 ## Flag Options
 
-- pink-triangle
+### Traditional/Historical Pride Flags
+
+- ally-pride
 - gilbert-baker
-- pride-1978
-- traditional
-- philadelphia
-- progress
 - intersex-inclusive
 - new-pride
-- social-justice
-- ally-pride
-- intersex
-- labrys
+- philadelphia
+- pink-triangle
+- pride-1978
 - pride-of-africa
-- drag
-- puppy
-- leather
-- rubber
-- lesbian
-- bear-brotherhood
-- trans-inclusive
+- progress
+- queer
+- social-justice
+- traditional
+
+### Gender Identity Flags
+
 - agender
+- androgyne
 - bigender
-- metagender
-- transgender
+- demiboy
+- demigender
+- demigirl
 - genderfluid
-- aromantic
-- abrosexual
-- graysexual
+- genderflux
+- genderqueer
 - hijra
+- metagender
+- neutrois
+- nonbinary
+- pangender
+- transgender
+- unlabeled
+
+### Sexual Orientation Flags
+
+- abrosexual
+- asexual
 - bisexual
 - demisexual
-- demiromantic
-- nonbinary
-- asexual
+- gay-men
+- graysexual
+- lesbian
+- omnisexual
 - pansexual
-- genderqueer
 - polysexual
+- sapphic
 - twink
-- androgyne
+
+### Romantic Orientation Flags
+
+- aromantic
+- demiromantic
+
+### Relationship Structure Flags
+
+- polyamory
+- polyamorous-new
+
+### Community/Cultural Flags
+
+- bear-brotherhood
+- drag
+- intersex
+- labrys
+- leather
+- puppy
+- rubber
+- trans-inclusive
+
+### Spectrum Flags
+
+- aromantic-spectrum
+- asexual-spectrum
 
 ## Contribute
 
