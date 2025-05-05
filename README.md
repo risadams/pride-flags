@@ -25,6 +25,8 @@ npm install @risadams/pride-flags
 
 ## Flag Options
 
+All flags with examples can be seen in this post: https://risadams.com/blog/2025/05/05/new-project-release-pride-flags
+
 ### Traditional/Historical Pride Flags
 
 - ally-pride
