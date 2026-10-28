@@ -55,6 +55,7 @@ All flags with examples can be seen in this post: https://risadams.com/blog/2025
 - demiboy
 - demigender
 - demigirl
+- doe
 - gendercreative
 - genderfluid
 - genderflux
@@ -67,6 +68,7 @@ All flags with examples can be seen in this post: https://risadams.com/blog/2025
 - nxnbinary
 - nonbinary
 - pangender
+- pocket-gender
 - transgender
 - unlabeled
 
