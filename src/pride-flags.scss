@@ -12,85 +12,56 @@
 .flag.icon.small {
   width: 2em;
 }
+
+// Traditional / historical
 .flag.pink-triangle {
   background: conic-gradient(from 331deg at 50% 100%, #f7a 58deg, #0000 0) 50% 50% / 55% 73% no-repeat, black;
 }
 .flag.gilbert-baker {
-  background: linear-gradient(
-    hotpink 12.5%,
-    red 0 25%,
-    orange 0 37.5%,
-    yellow 0 50%,
-    green 0 62.5%,
-    darkturquoise 0 75%,
-    blue 0 87.5%,
-    indigo 0
-  );
+  background: stripes(list.join(#ff69b4, $pride-1978));
 }
 .flag.pride-1978 {
-  background: linear-gradient(
-    red 0 14.28%,
-    orange 0 28.57%,
-    yellow 0 42.85%,
-    green 0 57.14%,
-    darkturquoise 0 71.42%,
-    blue 0 85.71%,
-    indigo 0
-  );
+  background: stripes($pride-1978);
 }
 .flag.traditional {
-  background: linear-gradient(red 16.66%, orange 0 33.33%, yellow 0 50%, green 0 66.66%, blue 0 83.33%, indigo 0);
+  background: stripes($rainbow);
 }
 .flag.philadelphia {
-  background: linear-gradient(
-    black 12.5%,
-    saddlebrown 0 25%,
-    red 0 37.5%,
-    orange 0 50%,
-    yellow 0 62.5%,
-    green 0 75%,
-    blue 0 87.5%,
-    indigo 0
-  );
+  background: stripes(list.join(black #784f17, $rainbow));
 }
 .flag.progress {
   background: conic-gradient(at 14% 50%, #0000 221.25deg, white 222deg 318deg, #0000 318.25deg),
-    conic-gradient(at 23% 50%, #0000 221.25deg, #ffa6b9 222deg 318deg, #0000 318.25deg),
-    conic-gradient(at 32% 50%, #0000 221.25deg, #00d2ff 222deg 318deg, #0000 318.25deg),
-    conic-gradient(at 41% 50%, #0000 221.25deg, #753000 222deg 318deg, #0000 318.25deg),
-    conic-gradient(at 50% 50%, #0000 221.25deg, black 222deg 318deg, #0000 318.25deg),
-    linear-gradient(red 0 16.66%, orange 0 33.33%, yellow 0 50%, green 0 66.66%, blue 0 83.33%, indigo 0);
+    conic-gradient(at 23% 50%, #0000 221.25deg, $chevron-pink 222deg 318deg, #0000 318.25deg),
+    conic-gradient(at 32% 50%, #0000 221.25deg, $chevron-blue 222deg 318deg, #0000 318.25deg),
+    conic-gradient(at 41% 50%, #0000 221.25deg, $chevron-brown 222deg 318deg, #0000 318.25deg),
+    conic-gradient(at 50% 50%, #0000 221.25deg, $chevron-black 222deg 318deg, #0000 318.25deg),
+    stripes($progress-rainbow);
 }
 .flag.intersex-inclusive {
-  background: radial-gradient(circle at 9.75% 50%, #0000 6.66%, darkviolet 6.7% 8.33%, #0000 8.4%),
-    conic-gradient(at 26.66% 50%, #0000 222.75deg, gold 0 317.25deg, #0000 0),
+  background: radial-gradient(circle at 9.75% 50%, #0000 6.66%, $intersex-purple 6.7% 8.33%, #0000 8.4%),
+    conic-gradient(at 26.66% 50%, #0000 222.75deg, $intersex-yellow 0 317.25deg, #0000 0),
     conic-gradient(at 33% 50%, #0000 222.75deg, white 0 317.25deg, #0000 0),
-    conic-gradient(at 39% 50%, #0000 222.75deg, #ffa6b9 0 317.25deg, #0000 0),
-    conic-gradient(at 45.66% 50%, #0000 222.75deg, #00d2ff 0 317.25deg, #0000 0),
-    conic-gradient(at 52% 50%, #0000 222.75deg, #753000 0 317.25deg, #0000 0),
-    conic-gradient(at 58.33% 50%, #0000 222.75deg, #000 0 317.25deg, #0000 0),
-    linear-gradient(red 0 16.66%, orange 0 33.33%, yellow 0 50%, green 0 66.66%, blue 0 83.33%, indigo 0);
+    conic-gradient(at 39% 50%, #0000 222.75deg, $chevron-pink 0 317.25deg, #0000 0),
+    conic-gradient(at 45.66% 50%, #0000 222.75deg, $chevron-blue 0 317.25deg, #0000 0),
+    conic-gradient(at 52% 50%, #0000 222.75deg, $chevron-brown 0 317.25deg, #0000 0),
+    conic-gradient(at 58.33% 50%, #0000 222.75deg, $chevron-black 0 317.25deg, #0000 0), stripes($rainbow);
 }
 .flag.new-pride {
   background: linear-gradient(
       to bottom right,
       white 10%,
-      #ffa6b9 0 20%,
-      #00d2ff 0 30%,
-      #753000 0 40%,
+      $chevron-pink 0 20%,
+      $chevron-blue 0 30%,
+      $chevron-brown 0 40%,
       black 0 50%,
       #0000 0
     ),
-    linear-gradient(red 16.66%, orange 0 33.33%, yellow 0 50%, green 0 66.66%, blue 0 83.33%, indigo 0);
+    stripes($rainbow);
 }
 .flag.social-justice {
   background: conic-gradient(at 12.5% 50%, #0000 228deg, #f9000c 0 312deg, #0000 0),
     conic-gradient(at 24% 50%, #0000 228deg, #1241a1 0 312deg, #0000 0),
-    conic-gradient(at 35.5% 50%, #0000 228deg, black 0 312deg, #0000 0),
-    linear-gradient(red 16.66%, orange 0 33.33%, yellow 0 50%, green 0 66.66%, blue 0 83.33%, indigo 0);
-}
-.flag.transgender {
-  background: linear-gradient(#00d2ff 20%, #ffa6b9 0 40%, white 0 60%, #ffa6b9 0 80%, #00d2ff 0);
+    conic-gradient(at 35.5% 50%, #0000 228deg, black 0 312deg, #0000 0), stripes($rainbow);
 }
 .flag.ally-pride {
   background: repeating-linear-gradient(black 0 16.66%, white 0 33.33%);
@@ -99,36 +70,221 @@
     width: 100%;
     height: 100%;
     display: block;
-    background: linear-gradient(red 16.66%, orange 0 33.33%, yellow 0 50%, green 0 66.66%, blue 0 83.33%, indigo 0);
+    background: stripes($rainbow);
     clip-path: polygon(0 100%, 50% 0, 100% 100%, 66.66% 100%, 50% 66.66%, 33.33% 100%);
   }
 }
-.flag.intersex {
-  background: radial-gradient(circle, gold 24.5%, darkviolet 25% 34%, gold 34.5%);
+.flag.queer {
+  background: linear-gradient(45deg, #b57edc 0 12.5%, #4a8123 0 37.5%, #b41e8e 0 62.5%, #e5c32e 0 87.5%, #1a3263 0);
 }
-.flag.bisexual {
-  background: linear-gradient(#f07 40%, #c49 0 60%, #03a 0);
+
+// Gender identity
+.flag.bxy {
+  background: stripes(#010102 #bac2c4 #95e7ff #72daff #95e7ff #bac2c4 #010102);
 }
-.flag.demisexual {
-  background: conic-gradient(at 35.5% 50%, #0000 228deg, black 0 312deg, #0000 0),
-    linear-gradient(white 42%, purple 0 58%, lightgray 0);
+.flag.gendercreative {
+  background: linear-gradient(#8b17b3 40%, #fff 0 60%, #8b17b3 0);
 }
-.flag.demiromantic {
-  background: conic-gradient(at 35.5% 50%, #0000 228deg, black 0 312deg, #0000 0),
-    linear-gradient(white 42%, #092 0 58%, lightgray 0);
+.flag.gxrl {
+  background: stripes(#010102 #bac2c4 #ffb1d1 #ff89bc #ffb1d1 #bac2c4 #010102);
 }
-.flag.pansexual {
-  background: linear-gradient(#f09 33.33%, gold 0 66.66%, deepskyblue 0);
+.flag.littlefluid {
+  background: stripes(#d4ecf4 #fbccd3 #fff #e4cbff #fcfd96);
 }
-.flag.asexual {
-  background: linear-gradient(black 25%, darkgray 0 50%, white 0 75%, #a50089 0);
+.flag.nxnbinary {
+  background: stripes(#010102 #bac2c4 #fffc95 #faf82e #fffc95 #bac2c4 #010102);
+}
+.flag.agender {
+  background: stripes(#000 #b9b9b9 #fff #b8f483 #fff #b9b9b9 #000);
+}
+.flag.androgyne {
+  background: stripes(#fe007f #9832ff #00b8e7);
+}
+.flag.bigender {
+  background: stripes(#c479a0 #eca6cb #d6c7e7 #fff #d6c7e7 #9bc7e8 #6b83cf);
+}
+.flag.demiboy {
+  background: stripes(#7f7f7f #c4c4c4 #fff #9ad9eb #fff #c4c4c4 #7f7f7f);
+}
+.flag.demigender {
+  background: stripes(#7f7f7f #c4c4c4 #fbff75 #fff #fbff75 #c4c4c4 #7f7f7f);
+}
+.flag.demigirl {
+  background: stripes(#7f7f7f #c4c4c4 #fff #ffaec9 #fff #c4c4c4 #7f7f7f);
+}
+.flag.genderfluid {
+  background: stripes(#ff75a2 #fff #be18d6 #000 #333ebd);
+}
+.flag.genderflux {
+  background: stripes(#f47695 #f1a3b9 #cecece #7be0f7 #3ecdfa #fef48c);
+}
+.flag.genderqueer {
+  background: stripes(#b57edc #fff #4a8123);
+}
+.flag.hijra {
+  background: linear-gradient(#ffc9e7 35%, white 0 45%, #d30000 0 55%, white 0 65%, #afe1fe 0);
+}
+.flag.metagender {
+  background: stripes(black lime yellow white yellow lime black);
+}
+.flag.neutrois {
+  background: stripes(#fff #1f9f00 #000);
 }
 .flag.nonbinary {
-  background: linear-gradient(yellow 25%, white 0 50%, mediumorchid 0 75%, black 0);
+  background: stripes(#fff430 #fff #9c59d1 #000);
+}
+.flag.pangender {
+  background: stripes(#fff798 #ffddcd #ffebfb #fff #ffebfb #ffddcd #fff798);
+}
+.flag.transgender {
+  background: stripes(#5bcefa #f5a9b8 #fff #f5a9b8 #5bcefa);
+}
+.flag.unlabeled {
+  background: stripes(#51a85c #fff #9455b3 #fff #000);
+}
+
+// Sexual orientation
+.flag.abrosexual {
+  background: stripes(#65c286 #b4e4cc #fff #e796b7 #d9446e);
+}
+.flag.asexual {
+  background: stripes(#000 #a3a3a3 #fff #800080);
+}
+.flag.bisexual {
+  background: linear-gradient(#d60270 40%, #9b4f96 0 60%, #0038a8 0);
+}
+.flag.demisexual {
+  background: conic-gradient(at 38.25% 50%, #0000 230deg, black 0 310deg, #0000 0),
+    linear-gradient(white 41.67%, #6e0070 0 58.33%, #d2d2d2 0);
+}
+.flag.gay-men {
+  background: stripes(#078d70 #26ceaa #98e8c1 #fff #7bade2 #5049cc #3d1a78);
+}
+.flag.graysexual {
+  background: stripes(#740195 #b2b2b2 #fff #b2b2b2 #740195);
+}
+.flag.lesbian {
+  background: stripes(#d52d00 #ef7627 #ff9a56 #fff #d162a4 #b55690 #a30262);
+}
+.flag.lipstick-lesbian {
+  background: stripes(#a40061 #b75592 #d063a6 #ededeb #e4accf #c54e54 #8a1e04);
+}
+.flag.omnisexual {
+  background: stripes(#ff9bcd #ff53be #260046 #665eff #8ca6ff);
+}
+.flag.pansexual {
+  background: stripes(#ff218c #ffd800 #21b1ff);
+}
+.flag.polysexual {
+  background: stripes(#f61cb9 #07d569 #1c92f6);
+}
+.flag.sapphic {
+  background: stripes(#fd8ba8 #fbf2ff #c76bc5 #fdd768);
+}
+.flag.twink {
+  position: relative;
+  background: linear-gradient(-45deg, #0000 43%, #000 0 57%, #0000 0) 52.5% 39.25% / 5% 5% no-repeat,
+    linear-gradient(-45deg, #0000 43%, #000 0 57%, #0000 0) 58.5% 45.25% / 5% 5% no-repeat,
+    linear-gradient(#000 0 0) 52.75% 37.5% / 3.5% 1.5% no-repeat,
+    linear-gradient(#000 0 0) 58.75% 43.5% / 3.5% 1.5% no-repeat, linear-gradient(#000 0 0) 54.1% 39% / 1% 5% no-repeat,
+    linear-gradient(#000 0 0) 59.75% 45.1% / 1% 5% no-repeat,
+    radial-gradient(circle at 47% 47%, #0000 7%, #000 0 8.5%, #0000 0),
+    radial-gradient(circle at 53% 53%, #0000 7%, #000 0 8.5%, #0000 0),
+    linear-gradient(#faf 33.33%, white 0 66.66%, #ff6 0);
+}
+
+// Romantic orientation
+.flag.aromantic,
+.flag.aromantic-spectrum {
+  background: stripes(#3da542 #a7d379 #fff #a9a9a9 #000);
+}
+.flag.demiromantic {
+  background: conic-gradient(at 38.25% 50%, #0000 230deg, black 0 310deg, #0000 0),
+    linear-gradient(white 41.67%, #338a37 0 58.33%, #d2d2d2 0);
+}
+
+// Relationship structure
+.flag.polyamory {
+  position: relative;
+  container-type: inline-size;
+  background: stripes(blue red black);
+  &::before {
+    content: "π";
+    color: yellow;
+    position: absolute;
+    font-family: "Times New Roman", "Times", serif;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 0;
+    font-size: 30cqw;
+    font-weight: 100;
+  }
+}
+// Red Howell's 2022 design: white chevron and gold heart on the hoist.
+.flag.polyamorous-new {
+  position: relative;
+  container-type: inline-size;
+  background: stripes(#009fe3 #e50051 #340c46);
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #fff;
+    clip-path: polygon(0 0, 20.04% 0, 40.08% 33.33%, 0 100%);
+  }
+  // A square with a circle on two adjacent sides, rotated so the point faces the fly.
+  &::after {
+    --heart: #fcbf00;
+    content: "";
+    position: absolute;
+    top: 11.53cqw;
+    left: 4.91cqw;
+    width: 19.8cqw;
+    aspect-ratio: 1;
+    transform: rotate(-135deg);
+    background: linear-gradient(var(--heart) 0 0) 0 100% / 66.67% 66.67% no-repeat,
+      radial-gradient(closest-side, var(--heart) 98%, #0000) 0 0 / 66.67% 66.67% no-repeat,
+      radial-gradient(closest-side, var(--heart) 98%, #0000) 100% 100% / 66.67% 66.67% no-repeat;
+  }
+}
+
+// Community / cultural
+.flag.bear-brotherhood {
+  background: stripes(#623804 #d56300 #fedd63 #fee6b8 #fff #555 #000);
+}
+.flag.drag {
+  --c: #f69ce4;
+  background: radial-gradient(circle at 50% 58.5%, #fff 0.75%, #0000 0),
+    radial-gradient(circle at 51.5% 58.6%, #fff 0.75%, #0000 0),
+    radial-gradient(circle at 52.85% 58.75%, #fff 0.75%, #0000 0),
+    radial-gradient(circle at 54.2% 59.1%, #fff 0.75%, #0000 0),
+    radial-gradient(circle at 55.6% 59.6%, #fff 0.75%, #0000 0),
+    radial-gradient(circle at 48.5% 58.6%, #fff 0.75%, #0000 0),
+    radial-gradient(circle at 47.15% 58.75%, #fff 0.75%, #0000 0),
+    radial-gradient(circle at 45.8% 59.1%, #fff 0.75%, #0000 0),
+    radial-gradient(circle at 44.4% 59.6%, #fff 0.75%, #0000 0),
+    radial-gradient(circle at 50% 37.5%, var(--c) 1%, #0000 0),
+    radial-gradient(circle at 56.25% 45.75%, var(--c) 1%, #0000 0),
+    radial-gradient(circle at 43.75% 45.75%, var(--c) 1%, #0000 0),
+    radial-gradient(circle at 63% 43.5%, var(--c) 1%, #0000 0),
+    radial-gradient(circle at 37% 43.25%, var(--c) 1%, #0000 0),
+    linear-gradient(90deg, #c35cff 33%, #0000 0 67%, #4561ff 0),
+    radial-gradient(25% 20% at 50% 71%, #fff 50%, #0000 50.5%),
+    conic-gradient(at 50% 0, #0000 165deg, var(--c) 0 195deg, #0000 0) 50% 51.5% / 10% 24% no-repeat,
+    conic-gradient(at 0 35%, #0000 133deg, var(--c) 0 175deg, #0000 0) 49.25% 51.5% / 10% 24% no-repeat,
+    conic-gradient(at 100% 35%, #0000 185deg, var(--c) 0 227deg, #0000 0) 50.75% 51.5% / 10% 24% no-repeat,
+    radial-gradient(100% 140% at 115% 77%, #fff 54%, #0000 0) 57.75% 58.25% / 10% 24% no-repeat,
+    radial-gradient(220% 145% at 135% 73%, var(--c) 50%, #0000 0) 57.5% 58.25% / 10% 24% no-repeat,
+    radial-gradient(100% 140% at -15% 77%, #fff 54%, #0000 0) 42.25% 58.5% / 10% 24% no-repeat,
+    radial-gradient(220% 145% at -35% 73%, var(--c) 50%, #0000 0) 42.5% 58.5% / 10% 24% no-repeat, #fff;
+}
+.flag.intersex {
+  background: radial-gradient(circle, $intersex-yellow 22%, $intersex-purple 22.5% 31%, $intersex-yellow 31.5%);
 }
 .flag.labrys {
   position: relative;
-  background: conic-gradient(from 330deg at 50% 100%, black 60deg, #0000 0) 50% 50% / 83% 83% no-repeat, darkmagenta;
+  background: conic-gradient(from 330deg at 50% 100%, black 60deg, #0000 0) 50% 50% / 83% 83% no-repeat, #792491;
   &::before {
     content: "";
     position: absolute;
@@ -157,129 +313,23 @@
     box-shadow: 0 0 0 1px;
   }
 }
-.flag.polyamory {
+.flag.leather {
   position: relative;
-  background: linear-gradient(blue 33.33%, red 0 66.66%, black 0);
-  &::before {
-    content: "π";
-    color: yellow;
+  background: linear-gradient(#fff 0 0) 50% 50% / 100% 11.11% no-repeat,
+    repeating-linear-gradient(black 0 11.11%, #282388 0 22.22%);
+  &::after {
+    content: "";
+    top: 1.5%;
+    left: 8.5%;
     position: absolute;
-    font-family: "Times New Roman", "Times", serif;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    line-height: 0;
-    font-size: 90px;
-    font-weight: 100;
+    width: 26.5%;
+    height: 40%;
+    background: radial-gradient(circle at 66.66% 33.33%, red 29.5%, #0000 30%),
+      radial-gradient(circle at 33.33% 66.66%, red 29.5%, #0000 30%), linear-gradient(-45deg, red 50%, #0000 0);
+    border-radius: 0 45%;
+    transform-origin: bottom right;
+    transform: rotate(1deg);
   }
-}
-.flag.icon.polyamory {
-  &::before {
-    font-size: 44px;
-  }
-}
-.flag.icon.small.polyamory {
-  &::before {
-    font-size: 30px;
-  }
-}
-.flag.twink {
-  position: relative;
-  background: linear-gradient(-45deg, #0000 43%, #000 0 57%, #0000 0) 52.5% 39.25% / 5% 5% no-repeat,
-    linear-gradient(-45deg, #0000 43%, #000 0 57%, #0000 0) 58.5% 45.25% / 5% 5% no-repeat,
-    linear-gradient(#000 0 0) 52.75% 37.5% / 3.5% 1.5% no-repeat,
-    linear-gradient(#000 0 0) 58.75% 43.5% / 3.5% 1.5% no-repeat, linear-gradient(#000 0 0) 54.1% 39% / 1% 5% no-repeat,
-    linear-gradient(#000 0 0) 59.75% 45.1% / 1% 5% no-repeat,
-    radial-gradient(circle at 47% 47%, #0000 7%, #000 0 8.5%, #0000 0),
-    radial-gradient(circle at 53% 53%, #0000 7%, #000 0 8.5%, #0000 0),
-    linear-gradient(#faf 33.33%, white 0 66.66%, #ff6 0);
-}
-.flag.genderfluid {
-  background: linear-gradient(hotpink 20%, white 0 40%, #e0e 0 60%, black 0 80%, blue 0);
-}
-.flag.aromantic {
-  background: linear-gradient(#0a2 20%, #7d6 0 40%, white 0 60%, darkgray 0 80%, black 0);
-}
-.flag.abrosexual {
-  background: linear-gradient(#5c8 20%, #a7e6c8 0 40%, white 0 60%, #f390b7 0 80%, #eb306d 0);
-}
-.flag.graysexual {
-  background: linear-gradient(darkmagenta 20%, darkgray 0 40%, white 0 60%, darkgray 0 80%, darkmagenta 0);
-}
-.flag.hijra {
-  background: linear-gradient(#ffc9e7 35%, white 0 45%, #d30000 0 55%, white 0 65%, #afe1fe 0);
-}
-.flag.genderqueer {
-  background: linear-gradient(orchid 33.33%, white 0 66.66%, green 0);
-}
-.flag.polysexual {
-  background: linear-gradient(#f0c 33.33%, #0d5 0 66.66%, #09f 0);
-}
-.flag.lesbian {
-  background: linear-gradient(
-    red 0 14.28%,
-    #ff7000 0 28.57%,
-    #f93 0 42.85%,
-    white 0 57.14%,
-    #f5a 0 71.42%,
-    #f49 0 85.71%,
-    #e06 0
-  );
-}
-.flag.bear-brotherhood {
-  background: linear-gradient(
-    #730 0 14.28%,
-    #f50 0 28.57%,
-    #fd3 0 42.85%,
-    #ffe7b1 0 57.14%,
-    white 0 71.42%,
-    #555 0 85.71%,
-    black 0
-  );
-}
-.flag.trans-inclusive {
-  background: linear-gradient(
-    #00916e 0 14.28%,
-    #00d2a9 0 28.57%,
-    #7debbe 0 42.85%,
-    white 0 57.14%,
-    #6eaee7 0 71.42%,
-    #5443d3 0 85.71%,
-    #43117d 0
-  );
-}
-.flag.agender {
-  background: linear-gradient(
-    black 0 14.28%,
-    silver 0 28.57%,
-    white 0 42.85%,
-    #a3fa73 0 57.14%,
-    white 0 71.42%,
-    silver 0 85.71%,
-    black 0
-  );
-}
-.flag.bigender {
-  background: linear-gradient(
-    #d074a2 0 14.28%,
-    #f8a1cd 0 28.57%,
-    #d9c6ea 0 42.85%,
-    white 0 57.14%,
-    #d9c6ea 0 71.42%,
-    #90c8ec 0 85.71%,
-    #6583d5 0
-  );
-}
-.flag.metagender {
-  background: linear-gradient(
-    black 0 14.28%,
-    lime 0 28.57%,
-    yellow 0 42.85%,
-    white 0 57.14%,
-    yellow 0 71.42%,
-    lime 0 85.71%,
-    black 0
-  );
 }
 .flag.puppy {
   position: relative;
@@ -299,24 +349,6 @@
       #0000 0
     ),
     linear-gradient(31.75deg, #0000 68.5%, black 0 79%, darkblue 0 89.5%, black 0);
-}
-.flag.leather {
-  position: relative;
-  background: linear-gradient(#fff 0 0) 50% 50% / 100% 11.11% no-repeat,
-    repeating-linear-gradient(black 0 11.11%, #282388 0 22.22%);
-  &::after {
-    content: "";
-    top: 1.5%;
-    left: 8.5%;
-    position: absolute;
-    width: 26.5%;
-    height: 40%;
-    background: radial-gradient(circle at 66.66% 33.33%, red 29.5%, #0000 30%),
-      radial-gradient(circle at 33.33% 66.66%, red 29.5%, #0000 30%), linear-gradient(-45deg, red 50%, #0000 0);
-    border-radius: 0 45%;
-    transform-origin: bottom right;
-    transform: rotate(1deg);
-  }
 }
 .flag.rubber {
   --bg: linear-gradient(black 18.5%, red 0 23%, gold 0 37.75%, red 0 42%, black 0 57%, red 0 61.25%, black 0) no-repeat;
@@ -349,6 +381,16 @@
     background-size: 100% 100%;
   }
 }
+.flag.trans-inclusive {
+  background: stripes(#00916e #00d2a9 #7debbe #fff #6eaee7 #5443d3 #43117d);
+}
+
+// Spectrum
+.flag.asexual-spectrum {
+  background: stripes(#810081 #a3a3a3 #fff #a3a3a3 #810081);
+}
+
+// Regional
 .flag.pride-of-africa {
   background: radial-gradient(farthest-side at 0 50%, #e80000 99.9999%, #0000 0) 9% 0 / 8.4% 25%,
     linear-gradient(#fa4aa7 0 0) 0 0 / 8.3333% 25%, linear-gradient(90deg, #e80000 50%, #ffc621 0) 0 0 / 16.6666% 50%,
@@ -379,167 +421,4 @@
     conic-gradient(at 100% 100%, #0000 305deg, #2e73ec 0 335deg, #0000 0) 60% 66.6666% / 6% 9%,
     linear-gradient(#ffc621 75%, #0000 0), linear-gradient(90deg, #fbe10c 54.1666%, #2e73ec 0 62.5%, #fbe10c 0);
   background-repeat: no-repeat;
-}
-.flag.androgyne {
-  background: linear-gradient(90deg, #f07 33.3%, #a0f 0 66.6%, #0be 0);
-}
-.flag.drag {
-  --c: #f69ce4;
-  background: radial-gradient(circle at 50% 58.5%, #fff 0.75%, #0000 0),
-    radial-gradient(circle at 51.5% 58.6%, #fff 0.75%, #0000 0),
-    radial-gradient(circle at 52.85% 58.75%, #fff 0.75%, #0000 0),
-    radial-gradient(circle at 54.2% 59.1%, #fff 0.75%, #0000 0),
-    radial-gradient(circle at 55.6% 59.6%, #fff 0.75%, #0000 0),
-    radial-gradient(circle at 48.5% 58.6%, #fff 0.75%, #0000 0),
-    radial-gradient(circle at 47.15% 58.75%, #fff 0.75%, #0000 0),
-    radial-gradient(circle at 45.8% 59.1%, #fff 0.75%, #0000 0),
-    radial-gradient(circle at 44.4% 59.6%, #fff 0.75%, #0000 0),
-    radial-gradient(circle at 50% 37.5%, var(--c) 1%, #0000 0),
-    radial-gradient(circle at 56.25% 45.75%, var(--c) 1%, #0000 0),
-    radial-gradient(circle at 43.75% 45.75%, var(--c) 1%, #0000 0),
-    radial-gradient(circle at 63% 43.5%, var(--c) 1%, #0000 0),
-    radial-gradient(circle at 37% 43.25%, var(--c) 1%, #0000 0),
-    linear-gradient(90deg, #c35cff 33%, #0000 0 67%, #4561ff 0),
-    radial-gradient(25% 20% at 50% 71%, #fff 50%, #0000 50.5%),
-    conic-gradient(at 50% 0, #0000 165deg, var(--c) 0 195deg, #0000 0) 50% 51.5% / 10% 24% no-repeat,
-    conic-gradient(at 0 35%, #0000 133deg, var(--c) 0 175deg, #0000 0) 49.25% 51.5% / 10% 24% no-repeat,
-    conic-gradient(at 100% 35%, #0000 185deg, var(--c) 0 227deg, #0000 0) 50.75% 51.5% / 10% 24% no-repeat,
-    radial-gradient(100% 140% at 115% 77%, #fff 54%, #0000 0) 57.75% 58.25% / 10% 24% no-repeat,
-    radial-gradient(220% 145% at 135% 73%, var(--c) 50%, #0000 0) 57.5% 58.25% / 10% 24% no-repeat,
-    radial-gradient(100% 140% at -15% 77%, #fff 54%, #0000 0) 42.25% 58.5% / 10% 24% no-repeat,
-    radial-gradient(220% 145% at -35% 73%, var(--c) 50%, #0000 0) 42.5% 58.5% / 10% 24% no-repeat, #fff;
-}
-.flag.demigender {
-  background: linear-gradient(
-    #808080 0 14.28%,
-    white 0 28.57%,
-    #fbff74 0 42.85%,
-    white 0 57.14%,
-    #fbff74 0 71.42%,
-    white 0 85.71%,
-    #808080 0
-  );
-}
-
-.flag.demiboy {
-  background: linear-gradient(
-    #7f7f7f 0 14.28%,
-    #c4c4c4 0 28.57%,
-    white 0 42.85%,
-    #9ad9ea 0 57.14%,
-    white 0 71.42%,
-    #c4c4c4 0 85.71%,
-    #7f7f7f 0
-  );
-}
-
-.flag.demigirl {
-  background: linear-gradient(
-    #7f7f7f 0 14.28%,
-    #c4c4c4 0 28.57%,
-    white 0 42.85%,
-    #ffaec9 0 57.14%,
-    white 0 71.42%,
-    #c4c4c4 0 85.71%,
-    #7f7f7f 0
-  );
-}
-
-.flag.omnisexual {
-  background: linear-gradient(
-    #fe9ace 0 20%,
-    #ff53bf 0 40%,
-    #301934 0 60%,
-    #304cbd 0 80%,
-    #82afff 0
-  );
-}
-
-.flag.neutrois {
-  background: linear-gradient(white 33.33%, #2f9e41 0 66.66%, black 0);
-}
-
-.flag.genderflux {
-  background: linear-gradient(
-    #f57694 0 16.67%,
-    #f9a3b6 0 33.33%,
-    #c6e2f1 0 50%,
-    white 0 66.67%,
-    #9c9c9c 0 83.33%,
-    #000 0
-  );
-}
-
-.flag.unlabeled {
-  background: linear-gradient(
-    #51a85c 0 20%,
-    white 0 40%,
-    #9455b3 0 60%,
-    white 0 80%,
-    #000 0
-  );
-}
-
-.flag.queer {
-  background: linear-gradient(45deg,
-    #b57edc 0 12.5%,
-    #4a8123 0 37.5%,
-    #b41e8e 0 62.5%,
-    #e5c32e 0 87.5%,
-    #1a3263 0
-  );
-}
-
-.flag.sapphic {
-  background: linear-gradient(
-    #FD8BA8 25%,
-    #FBF2FF 0 50%,
-    #C76BC5 0 75%,
-    #FDD768 0
-  );
-}
-
-.flag.gay-men {
-  background: linear-gradient(
-    #078d70 0 14.28%,
-    #27ceaa 0 28.57%,
-    #98e8c1 0 42.85%,
-    white 0 57.14%,
-    #7bade2 0 71.42%,
-    #5049cc 0 85.71%,
-    #3d1a78 0
-  );
-}
-
-.flag.pangender {
-  background: linear-gradient(
-    #fff27f 0 12.5%,
-    #ffb3fb 0 25%,
-    #b5f7ff 0 37.5%,
-    white 0 50%,
-    #b5f7ff 0 62.5%,
-    #ffb3fb 0 75%,
-    #fff27f 0 87.5%,
-    #ffb3fb 0
-  );
-}
-
-.flag.aromantic-spectrum {
-  background: linear-gradient(
-    #3da542 0 20%,
-    #a7d379 0 40%,
-    #f5f5f5 0 60%,
-    #a9a9a9 0 80%,
-    #000000 0
-  );
-}
-
-.flag.asexual-spectrum {
-  background: linear-gradient(
-    #810081 0 20%,
-    #a3a3a3 0 40%,
-    #ffffff 0 60%,
-    #a3a3a3 0 80%,
-    #810081 0
-  );
 }
