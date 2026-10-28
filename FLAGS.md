@@ -17,10 +17,13 @@ Each was checked on 2026-10-28. Every flag in the "Verified" tables was also com
 | `agender` | agender_pride_flag | |
 | `aromantic`, `aromantic-spectrum` | aromantic_pride_flag | Same flag. `aromantic-spectrum` is an alias. |
 | `asexual` | asexual_pride_flag | |
-| `bear-brotherhood` | bear_pride_flag | Stripes only. The reference has a black paw print in the top left that is not drawn. |
+| `bear-brotherhood` | bear_pride_flag | The paw print is an inline SVG stretched to the flag, so it is about 7% wider than the reference. |
 | `bigender` | bigender_pride_flag_7_stripe | |
 | `bisexual` | bisexual_pride_flag | Bands are 2:1:2. |
 | `bxy` | bxy_pride_flag | New. |
+| `doe` | doe_pride_flag | New. The silhouette is an inline SVG with its path rounded to 2 decimals. |
+| `gay-uk` | gay_pride_flag_uk | New. Drawn with gradients at 2:1 so the diagonals keep their angle. |
+| `pocket-gender` | pocket_gender_pride_flag | New. Inline SVG polygons, stretched to the flag. |
 | `demiboy`, `demigirl` | demiboy_pride_flag, demigirl_pride_flag | |
 | `demiromantic`, `demisexual` | demiromantic_pride_flag, demisexual_pride_flag | Triangle and stripe geometry were corrected. |
 | `gendercreative` | gendercreative_pride_flag | New. |
@@ -78,6 +81,7 @@ The gallery's stripe counts agree with our flags for `androgyne` (3), `neutrois`
 
 ## Listed by the references but not added
 
-- **Needs artwork we haven't drawn:** `doe`, `pocket-gender`, `ingender`, the UK gay flag, and the "with kiss" lipstick lesbian flag.
+- **`ingender`:** the prideflags.org file is a blank white rectangle, so there is no design to copy.
+- **Lipstick lesbian "with kiss":** the kiss is a traced path of about 51 KB, which would nearly triple the stylesheet. The stripes-only `lipstick-lesbian` is included.
 - **Variants of flags we already have:** the other agender and nonbinary variants, the `pangender` yellow-center flag, the rainbow lesbian flag, the transgender variants, `trans-intersex`, and the two Trans PoC "new pride" flags.
 - **Fandom flags with no color source:** the gallery lists many more flags, such as maverique, achillean and aegosexual. It has no color values, so none were added.

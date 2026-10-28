@@ -23,7 +23,7 @@ There are no tests. CI only checks that `dist/` matches `src/`. To check a flag,
 
 ## Adding or changing a flag
 
-1. Add or edit a `.flag.<kebab-case-name>` rule in `src/pride-flags.scss`. Equal bands are `stripes(#color1 #color2 ...)`, top to bottom. Unequal bands (bisexual, hijra) are written as hard-stop `linear-gradient`s. More complex flags layer `conic-gradient` or `radial-gradient` shapes (chevrons, triangles, rings) over a stripe base. Copy a similar existing flag.
+1. Add or edit a `.flag.<kebab-case-name>` rule in `src/pride-flags.scss`. Equal bands are `stripes(#color1 #color2 ...)`, top to bottom. Unequal bands (bisexual, hijra) are written as hard-stop `linear-gradient`s. Shapes that gradients cannot draw (`doe`, `pocket-gender`, the bear paw) use an inline SVG data URI as a background layer. Keep these small. More complex flags layer `conic-gradient` or `radial-gradient` shapes (chevrons, triangles, rings) over a stripe base. Copy a similar existing flag.
 2. Add a `<section>` to `index.html` under the right category. Copy an existing one. It needs `class="flag <name>" role="img"` and a descriptive `aria-label` that gives the flag's name, then its stripes and shapes in order, with colors.
 3. Add the class name to the matching category list in `README.md`. Lists are alphabetical.
 4. Record the color source in `FLAGS.md`, and mark it unverified if it is not from a reference.
