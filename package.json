@@ -2,8 +2,22 @@
   "name": "@risadams/pride-flags",
   "version": "1.1.0",
   "description": "Pure CSS Pride Flags",
+  "main": "dist/pride-flags.min.css",
+  "style": "dist/pride-flags.min.css",
+  "sass": "src/pride-flags.scss",
+  "exports": {
+    ".": {
+      "style": "./dist/pride-flags.min.css",
+      "default": "./dist/pride-flags.min.css"
+    },
+    "./dist/*": "./dist/*",
+    "./src/*": "./src/*",
+    "./package.json": "./package.json"
+  },
   "files": [
-    "dist/*.css"
+    "dist/*.css",
+    "dist/*.css.map",
+    "src/pride-flags.scss"
   ],
   "scripts": {
     "build:compile": "sass --style=expanded --source-map --embed-sources src/pride-flags.scss dist/pride-flags.css",
