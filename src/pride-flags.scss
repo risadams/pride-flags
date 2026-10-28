@@ -8,10 +8,18 @@
   $stops: ();
   @for $i from 1 through $n {
     $color: list.nth($colors, $i);
-    $stop: if($i == 1, math.percentage(math.div(1, $n)), if($i == $n, 0, 0 math.percentage(math.div($i, $n))));
-    $stops: list.append($stops, $color $stop, comma);
+    @if $i == 1 {
+      $stops: list.append($stops, $color math.percentage(math.div(1, $n)), comma);
+    } @else if $i == $n {
+      $stops: list.append($stops, $color 0, comma);
+    } @else {
+      $stops: list.append($stops, $color 0 math.percentage(math.div($i, $n)), comma);
+    }
   }
-  @return if($direction, linear-gradient($direction, $stops), linear-gradient($stops));
+  @if $direction {
+    @return linear-gradient($direction, $stops);
+  }
+  @return linear-gradient($stops);
 }
 
 // Reference colors and sources are listed in FLAGS.md.
