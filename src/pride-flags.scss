@@ -101,6 +101,44 @@ $intersex-purple: #7902aa;
     clip-path: polygon(0 100%, 50% 0, 100% 100%, 66.66% 100%, 50% 66.66%, 33.33% 100%);
   }
 }
+// The Union Jack layout is drawn at its own 2:1 proportions so the diagonals stay at the right angle.
+.flag.gay-uk {
+  --red: #e00034;
+  position: relative;
+  aspect-ratio: 2 / 1;
+  background: linear-gradient(to bottom right, #0000 44.41%, #fff 0 55.59%, #0000 0),
+    linear-gradient(to top right, #0000 44.41%, #fff 0 55.59%, #0000 0), #fa87d2;
+  // Red diagonals, each drawn on one side only.
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom right, #0000 46.27%, var(--red) 0 53.73%, #0000 0),
+      linear-gradient(to top right, #0000 46.27%, var(--red) 0 53.73%, #0000 0);
+    clip-path: polygon(
+      50% 50%,
+      100% 50%,
+      100% 100%,
+      50% 50%,
+      50% 100%,
+      0 100%,
+      50% 50%,
+      0 50%,
+      0 0,
+      50% 50%,
+      50% 0,
+      100% 0
+    );
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(var(--red) 0 0) 50% 50% / 100% 20% no-repeat,
+      linear-gradient(var(--red) 0 0) 50% 50% / 10% 100% no-repeat,
+      linear-gradient(#fff 0 0) 50% 50% / 100% 33.33% no-repeat, linear-gradient(#fff 0 0) 50% 50% / 16.67% 100% no-repeat;
+  }
+}
 .flag.queer {
   background: linear-gradient(45deg, #b57edc 0 12.5%, #4a8123 0 37.5%, #b41e8e 0 62.5%, #e5c32e 0 87.5%, #1a3263 0);
 }

@@ -34,6 +34,7 @@ All flags with examples can be seen in this post: https://risadams.com/blog/2025
 ### Traditional/Historical Pride Flags
 
 - ally-pride
+- gay-uk
 - gilbert-baker
 - intersex-inclusive
 - new-pride
