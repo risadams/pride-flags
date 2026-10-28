@@ -10,6 +10,8 @@ This is a pure CSS library that can be included in your project to display LGBT+
 npm install @risadams/pride-flags
 ```
 
+Import `@risadams/pride-flags` in a bundler, or link `node_modules/@risadams/pride-flags/dist/pride-flags.min.css`.
+
 ## Usage
 
 ```html
@@ -18,10 +20,12 @@ npm install @risadams/pride-flags
 </head>
 
 <body>
-  <div class="flag progress" role="img"></div>
-  <div class="flag icon progress"></div>
+  <div class="flag progress" role="img" aria-label="Progress Pride Flag"></div>
+  <div class="flag icon progress" role="img" aria-label="Progress Pride Flag"></div>
 </body>
 ```
+
+Flags are drawn with CSS, so they have no text of their own. Give each one `role="img"` and an `aria-label`.
 
 ## Flag Options
 
@@ -47,15 +51,20 @@ All flags with examples can be seen in this post: https://risadams.com/blog/2025
 - agender
 - androgyne
 - bigender
+- bxy
 - demiboy
 - demigender
 - demigirl
+- gendercreative
 - genderfluid
 - genderflux
 - genderqueer
+- gxrl
 - hijra
+- littlefluid
 - metagender
 - neutrois
+- nxnbinary
 - nonbinary
 - pangender
 - transgender
@@ -70,6 +79,7 @@ All flags with examples can be seen in this post: https://risadams.com/blog/2025
 - gay-men
 - graysexual
 - lesbian
+- lipstick-lesbian
 - omnisexual
 - pansexual
 - polysexual
@@ -78,13 +88,13 @@ All flags with examples can be seen in this post: https://risadams.com/blog/2025
 
 ### Romantic Orientation Flags
 
-- aromantic
+- aromantic (`aromantic-spectrum` is an alias)
 - demiromantic
 
 ### Relationship Structure Flags
 
-- polyamory
-- polyamorous-new
+- polyamory (blue, red and black with a yellow π)
+- polyamorous-new (2022 tricolor with a white chevron and gold heart)
 
 ### Community/Cultural Flags
 
@@ -101,6 +111,10 @@ All flags with examples can be seen in this post: https://risadams.com/blog/2025
 
 - aromantic-spectrum
 - asexual-spectrum
+
+## Accuracy
+
+[FLAGS.md](FLAGS.md) lists which flags have been checked against a reference and which have not. Corrections are welcome.
 
 ## Contribute
 
