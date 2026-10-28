@@ -16,12 +16,11 @@
   },
   "files": [
     "dist/*.css",
-    "dist/*.css.map",
     "src/pride-flags.scss"
   ],
   "scripts": {
-    "build:compile": "sass --style=expanded --source-map --embed-sources src/pride-flags.scss dist/pride-flags.css",
-    "build:minify": "cleancss --format breaksWith=lf --source-map --source-map-inline-sources --output dist/pride-flags.min.css dist/pride-flags.css",
+    "build:compile": "sass --style=expanded --no-source-map src/pride-flags.scss dist/pride-flags.css",
+    "build:minify": "cleancss --format breaksWith=lf --output dist/pride-flags.min.css dist/pride-flags.css",
     "build": "npm run build:compile && npm run build:minify"
   },
   "repository": {

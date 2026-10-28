@@ -7,7 +7,7 @@ Pure-CSS library of LGBTQ+ pride flags, published as `@risadams/pride-flags`. Ea
 - `src/pride-flags.scss`: the library source. Flat list of `.flag.<name>` rules, one `background:` each. Flags are grouped by category. Equal-band flags use the `stripes()` function with a list of colors, and `$rainbow` is shared by every rainbow-based flag.
 - `src/demo.css`: styles for the demo page only. It is not shipped.
 - `index.html`: demo page. One `<section>` per flag, grouped under category headers. Loads `src/demo.css` and `dist/pride-flags.min.css`.
-- `dist/`: build output (`.css`, `.min.css`, and source maps). **Committed to git and published to npm** (`files: dist/*.css`).
+- `dist/`: build output (`.css` and `.min.css`, no source maps). **Committed to git and published to npm** (`files: dist/*.css`).
 - `README.md`: usage plus the categorized list of flag class names.
 - `FLAGS.md`: where each flag's colors came from and whether they have been verified.
 - `.github/workflows/build.yml`: CI that builds and fails if `dist/` is out of date.
